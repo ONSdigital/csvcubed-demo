@@ -1,44 +1,44 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
-    "@id": "song.csv#code-list",
-    "url": "song.csv",
-    "tableSchema": "song.table.json",
+    "@id": "year.csv#code-list",
+    "url": "year.csv",
+    "tableSchema": "year.table.json",
     "rdfs:seeAlso": [
         {
-            "@id": "song.csv#code-list",
+            "@id": "year.csv#code-list",
             "@type": [
                 "http://www.w3.org/ns/dcat#Dataset",
-                "http://www.w3.org/2004/02/skos/core#ConceptScheme",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2004/02/skos/core#ConceptScheme",
                 "http://www.w3.org/ns/dcat#Resource"
             ],
             "http://purl.org/dc/terms/identifier": [
                 {
-                    "@value": "Song"
+                    "@value": "Year"
                 }
             ],
             "http://purl.org/dc/terms/issued": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-04-25T10:59:39.279754"
+                    "@value": "2022-06-08T09:25:13.676024"
                 }
             ],
             "http://purl.org/dc/terms/modified": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-04-25T10:59:39.279754"
+                    "@value": "2022-06-08T09:25:13.676024"
                 }
             ],
             "http://purl.org/dc/terms/title": [
                 {
                     "@language": "en",
-                    "@value": "Song"
+                    "@value": "Year"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Song"
+                    "@value": "Year"
                 }
             ]
         }
