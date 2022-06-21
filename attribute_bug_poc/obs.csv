@@ -1,0 +1,3 @@
+dimension a, dimension b, attribute c, value, measure, unit
+a1, b1, 5, 10, count, NUM
+a2, b2, 10, 20, count, NUM

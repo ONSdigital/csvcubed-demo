@@ -1,0 +1,24 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1.0",
+    "columns": {
+        "dimension a": {
+            "label": "Dimension A"
+        },
+        "attribute c": {
+            "type": "attribute",
+            "data_type": "int"
+        },
+        "unit": {
+            "type": "units",
+            "values": [
+                {
+                    "label": "NUM",
+                    "from_existing": "http://qudt.org/vocab/unit/NUM",
+                    "scaling_factor": 1,
+                    "si_scaling_factor": 1
+                }
+            ]
+            
+        }
+    }
+}
