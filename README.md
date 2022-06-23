@@ -15,3 +15,5 @@ If you have not before, you'll need to install the [gcloud](https://cloud.google
 * `docker build -t csvcubed-cloudshell .`
 * `docker tag csvcubed-cloudshell gcr.io/<PROJECT_ID>/cvcubed-cloudshell`
 * `docker push gcr.io/<PROJECT_ID>/cvcubed-cloudshell`
+
+Warning - both your first build and push will be very slow, its a very large base image.
