@@ -1,0 +1,29 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1.0",
+    "title": "Components of population change - Local Government Districts",
+    "creator": "https://www.gov.uk/government/organisations/northern-ireland-statistics-and-research-agency",
+    "publisher": "https://www.gov.uk/government/organisations/northern-ireland-statistics-and-research-agency",
+    "keywords": [
+        "demography",
+        "population",
+        "local government"
+    ],
+    "columns": {
+        "Annual": {
+            "label": "Government Year",
+            "from_template": "government-year"
+        },
+        "Local Government Districts": {
+            "type": "dimension"
+        },
+        "Components of Change": {
+            "type": "measures"
+        },
+        "UNIT": {
+            "type": "units"
+        },
+        "VALUE": {
+            "type": "observations"
+        }
+    }
+}
