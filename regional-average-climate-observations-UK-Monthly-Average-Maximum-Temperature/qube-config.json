@@ -1,0 +1,12 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Regional average climate observations UK Monthly Average Maximum Temperature",
+    "dataset_issued": "2021-02-02T09:30Z1",
+    "publisher": "https://www.gov.uk/government/organisations/met-office",
+    "creator": "https://www.gov.uk/government/organisations/met-office",
+    "themes": "http://gss-data.org.uk/def/gdp#climate-change",
+    "keywords": [
+        "climate",
+        "temperature"
+    ]
+}
