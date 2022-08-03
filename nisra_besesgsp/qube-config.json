@@ -1,0 +1,17 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Broad Economy Sales and Export Statistics: Trade in Goods and Services",
+    "description": "Latest year data remains provisional until next reporting period. Figures may not sum due to rounding.",
+    "columns": {
+        "Statistic": {
+            "type": "measures"
+        },
+        "Year": {
+            "from_template": "year"
+        },
+        "marker": {
+            "type" : "attribute",
+            "from_template": "observation-status"
+        }
+    }
+}
