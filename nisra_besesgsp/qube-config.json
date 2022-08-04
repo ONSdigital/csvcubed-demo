@@ -9,7 +9,7 @@
         "Year": {
             "from_template": "year"
         },
-        "marker": {
+        "Marker": {
             "type" : "attribute",
             "from_template": "observation-status"
         }
