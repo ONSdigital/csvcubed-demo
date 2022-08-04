@@ -111,272 +111,11 @@
     ],
     "rdfs:seeAlso": [
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Rest of world Net"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/statistic",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 1
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/deaths",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Deaths"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-net",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "United Kingdom Net"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/births",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Births"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 15
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/measure-type",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 24
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-net",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 14
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/internal-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 7
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/total-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 19
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Internal Outflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/starting-population",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 16
-                }
-            ]
-        },
-        {
             "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-net",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
@@ -395,242 +134,61 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Starting population"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/deaths",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 5
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/total-net",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 18
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#class/local-government-districts",
+            "@id": "components-of-population-change-local-government-districts.csv#class/statistic",
             "@type": [
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/2000/01/rdf-schema#Class"
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts",
+            "@id": "components-of-population-change-local-government-districts.csv#component/starting-population",
             "@type": [
-                "http://purl.org/linked-data/cube#CodedProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
-            "http://purl.org/linked-data/cube#codeList": [
+            "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "local-government-districts.csv#code-list"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
                 }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 16
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Local Government Districts"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#class/local-government-districts"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/other-changes",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 12
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 13
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 20
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Rest of world Inflows"
+                    "@value": "Total Outflows"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#range": [
                 {
                     "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/total-net",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Total Net"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/end-population",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/end-population"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/end-population"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 6
                 }
             ]
         },
         {
             "@id": "components-of-population-change-local-government-districts.csv#component/births",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
@@ -649,12 +207,138 @@
             ]
         },
         {
+            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 15
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/births",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Births"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/total-net",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 18
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Internal Outflows"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Other changes"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/deaths",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Deaths"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
             "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes",
             "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#MeasureProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -671,8 +355,8 @@
         {
             "@id": "components-of-population-change-local-government-districts.csv#structure",
             "@type": [
-                "http://purl.org/linked-data/cube#DataStructureDefinition",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
                 "http://purl.org/linked-data/cube#ComponentSet"
             ],
             "http://purl.org/linked-data/cube#component": [
@@ -680,70 +364,70 @@
                     "@id": "components-of-population-change-local-government-districts.csv#component/total-inflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-net"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-outflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-net"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/government-year"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/natural-change"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/total-outflows"
-                },
-                {
                     "@id": "components-of-population-change-local-government-districts.csv#component/local-government-districts"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/end-population"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-net"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-net"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-inflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/internal-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/unit"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/births"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/migration-and-other-changes"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/total-outflows"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-outflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/deaths"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/internal-net"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/statistic"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-inflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/migration-and-other-changes"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/deaths"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/internal-outflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/starting-population"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/internal-inflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/unit"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/end-population"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/births"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-outflows"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/measure-type"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/internal-net"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#component/government-year"
+                    "@id": "components-of-population-change-local-government-districts.csv#component/statistic"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/other-changes"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#component/starting-population"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#component/total-net"
@@ -751,93 +435,86 @@
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-net"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/births"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
-                },
-                {
                     "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-net"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
                 },
                 {
                     "@id": "http://purl.org/linked-data/cube#measureType"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
-                },
-                {
                     "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-net"
                 },
                 {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
                 },
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
-                },
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
                 },
                 {
                     "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes"
                 },
                 {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/births"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
+                },
+                {
                     "@id": "components-of-population-change-local-government-districts.csv#measure/end-population"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
+                },
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-net"
                 }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#class/statistic",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
             ]
         },
         {
             "@id": "components-of-population-change-local-government-districts.csv#measure/end-population",
             "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#MeasureProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -852,211 +529,57 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#component/total-inflows",
+            "@id": "components-of-population-change-local-government-districts.csv#component/migration-and-other-changes",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes"
                 }
             ],
             "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 17
+                    "@value": 10
                 }
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic",
+            "@id": "components-of-population-change-local-government-districts.csv#component/local-government-districts",
             "@type": [
-                "http://purl.org/linked-data/cube#CodedProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "statistic.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Statistic"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#class/statistic"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/natural-change",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts"
                 }
             ],
-            "http://purl.org/linked-data/cube#measure": [
+            "http://purl.org/linked-data/cube#dimension": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 11
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Rest of world Outflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "United Kingdom Inflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/unit",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#attribute": [
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentRequired": [
-                {
-                    "@value": true
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 23
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Total Inflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Internal Inflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Total Outflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                    "@value": 3
                 }
             ]
         },
         {
             "@id": "components-of-population-change-local-government-districts.csv#component/internal-net",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
@@ -1075,13 +598,99 @@
             ]
         },
         {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Rest of world Net"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-net",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Internal Net"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/internal-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 20
+                }
+            ]
+        },
+        {
             "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year",
             "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty"
             ],
             "http://purl.org/linked-data/cube#codeList": [
                 {
@@ -1106,63 +715,109 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#component/local-government-districts",
+            "@id": "components-of-population-change-local-government-districts.csv#measure/total-net",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Total Net"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts"
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
                 }
             ],
             "http://purl.org/linked-data/cube#dimension": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts"
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 3
+                    "@value": 2
                 }
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-outflows",
+            "@id": "components-of-population-change-local-government-districts.csv#component/total-outflows",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
                 }
             ],
             "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-outflows"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 22
+                    "@value": 19
                 }
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-net",
+            "@id": "components-of-population-change-local-government-districts.csv#dimension/local-government-districts",
             "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#CodedProperty",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "local-government-districts.csv#code-list"
+                }
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Internal Net"
+                    "@value": "Local Government Districts"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#class/local-government-districts"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "United Kingdom Outflows"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1172,17 +827,132 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes",
+            "@id": "components-of-population-change-local-government-districts.csv#component/measure-type",
             "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 24
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/natural-change",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/other-changes",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/other-changes"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 12
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/deaths",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/deaths"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-net",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-net"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 14
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#MeasureProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Other changes"
+                    "@value": "Rest of world Inflows"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1192,36 +962,192 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#component/internal-outflows",
+            "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Total Inflows"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/end-population",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/end-population"
                 }
             ],
             "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-outflows"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/end-population"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 9
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/internal-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#class/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "statistic.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Statistic"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#class/statistic"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "United Kingdom Inflows"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Natural Change"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Rest of world Outflows"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/starting-population",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Starting population"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
                 }
             ]
         },
         {
             "@id": "components-of-population-change-local-government-districts.csv#dataset",
             "@type": [
-                "http://purl.org/linked-data/cube#Attachable",
-                "http://purl.org/linked-data/cube#DataSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/ns/dcat#Dataset",
-                "http://www.w3.org/ns/dcat#Resource"
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/dc/terms/creator": [
                 {
@@ -1236,13 +1162,13 @@
             "http://purl.org/dc/terms/issued": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-07-05T12:03:48.736827"
+                    "@value": "2022-07-05T14:21:55.585243"
                 }
             ],
             "http://purl.org/dc/terms/modified": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-07-05T12:03:48.736827"
+                    "@value": "2022-07-05T14:21:55.585243"
                 }
             ],
             "http://purl.org/dc/terms/publisher": [
@@ -1270,7 +1196,7 @@
             "http://www.w3.org/ns/dcat#keyword": [
                 {
                     "@language": "en",
-                    "@value": "population"
+                    "@value": "demography"
                 },
                 {
                     "@language": "en",
@@ -1278,22 +1204,22 @@
                 },
                 {
                     "@language": "en",
-                    "@value": "demography"
+                    "@value": "population"
                 }
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/natural-change",
+            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-net",
             "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#MeasureProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Natural Change"
+                    "@value": "United Kingdom Net"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1303,83 +1229,157 @@
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#component/migration-and-other-changes",
+            "@id": "components-of-population-change-local-government-districts.csv#component/total-inflows",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
                 }
             ],
             "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@id": "components-of-population-change-local-government-districts.csv#measure/migration-and-other-changes"
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/total-inflows"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 10
+                    "@value": 17
                 }
             ]
         },
         {
-            "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "United Kingdom Outflows"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#component/government-year",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "components-of-population-change-local-government-districts.csv#dimension/government-year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 2
-                }
-            ]
-        },
-        {
-            "@id": "components-of-population-change-local-government-districts.csv#class/government-year",
+            "@id": "components-of-population-change-local-government-districts.csv#class/local-government-districts",
             "@type": [
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/2000/01/rdf-schema#Class"
             ]
         },
         {
+            "@id": "components-of-population-change-local-government-districts.csv#component/rest-of-world-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/rest-of-world-inflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 13
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/statistic",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#dimension/statistic"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/unit",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 23
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#component/united-kingdom-outflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "components-of-population-change-local-government-districts.csv#measure/united-kingdom-outflows"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 22
+                }
+            ]
+        },
+        {
+            "@id": "components-of-population-change-local-government-districts.csv#measure/internal-inflows",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Internal Inflows"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
             "@id": "components-of-population-change-local-government-districts.csv#dependency/statistic",
             "@type": [
-                "http://rdfs.org/ns/void#Dataset",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
             ],
             "http://rdfs.org/ns/void#dataDump": [
                 {
@@ -1395,8 +1395,8 @@
         {
             "@id": "components-of-population-change-local-government-districts.csv#dependency/government-year",
             "@type": [
-                "http://rdfs.org/ns/void#Dataset",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
             ],
             "http://rdfs.org/ns/void#dataDump": [
                 {
@@ -1412,8 +1412,8 @@
         {
             "@id": "components-of-population-change-local-government-districts.csv#dependency/local-government-districts",
             "@type": [
-                "http://rdfs.org/ns/void#Dataset",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
             ],
             "http://rdfs.org/ns/void#dataDump": [
                 {
@@ -1429,9 +1429,9 @@
         {
             "@id": "components-of-population-change-local-government-districts.csv#unit/count",
             "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://qudt.org/schema/qudt/Unit",
-                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
