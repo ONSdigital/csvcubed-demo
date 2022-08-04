@@ -1,0 +1,46 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "transaction.csv#code-list",
+    "url": "transaction.csv",
+    "tableSchema": "transaction.table.json",
+    "rdfs:seeAlso": [
+        {
+            "@id": "transaction.csv#code-list",
+            "@type": [
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Transaction"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-08-04T17:02:43.267045"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-08-04T17:02:43.267045"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Transaction"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Transaction"
+                }
+            ]
+        }
+    ]
+}
