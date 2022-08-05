@@ -158,58 +158,12 @@
     ],
     "rdfs:seeAlso": [
         {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/year",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 2
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/flow",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 3
-                }
-            ]
-        },
-        {
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status",
             "@type": [
                 "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty"
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -224,57 +178,11 @@
             ]
         },
         {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/trade-partner",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 5
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/transaction",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 4
-                }
-            ]
-        },
-        {
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/value-of-trade",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
@@ -293,212 +201,13 @@
             ]
         },
         {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner",
-            "@type": [
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "trade-partner.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Trade Partner"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/trade-partner"
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#measure/value-of-trade",
-            "@type": [
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Value of Trade"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/industry-sector",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 6
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector",
-            "@type": [
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "industry-sector.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Industry Sector"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/industry-sector"
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/transaction",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/flow",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/year",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/trade-partner",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow",
-            "@type": [
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "flow.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Flow"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/flow"
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dataset",
-            "@type": [
-                "http://purl.org/linked-data/cube#DataSet",
-                "http://www.w3.org/ns/dcat#Resource",
-                "http://www.w3.org/ns/dcat#Dataset",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#Attachable"
-            ],
-            "http://purl.org/dc/terms/description": [
-                {
-                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
-                    "@value": "Latest year data remains provisional until next reporting period. Figures may not sum due to rounding."
-                }
-            ],
-            "http://purl.org/dc/terms/identifier": [
-                {
-                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
-                }
-            ],
-            "http://purl.org/dc/terms/issued": [
-                {
-                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-08-04T17:02:43.272469"
-                }
-            ],
-            "http://purl.org/dc/terms/modified": [
-                {
-                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-08-04T17:02:43.272469"
-                }
-            ],
-            "http://purl.org/dc/terms/title": [
-                {
-                    "@language": "en",
-                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
-                }
-            ],
-            "http://purl.org/linked-data/cube#structure": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#structure"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
-                }
-            ]
-        },
-        {
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year",
             "@type": [
-                "http://purl.org/linked-data/cube#DimensionProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
             ],
             "http://purl.org/linked-data/cube#codeList": [
                 {
@@ -523,135 +232,11 @@
             ]
         },
         {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/measure-type",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 8
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#structure",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#DataStructureDefinition"
-            ],
-            "http://purl.org/linked-data/cube#component": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/unit"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/flow"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/year"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/transaction"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/observation-status"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/industry-sector"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/measure-type"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/value-of-trade"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/trade-partner"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#measure/value-of-trade"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                },
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
-                }
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/industry-sector",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/observation-status",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#attribute": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentRequired": [
-                {
-                    "@value": false
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 9
-                }
-            ]
-        },
-        {
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/unit",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#attribute": [
                 {
@@ -675,13 +260,170 @@
             ]
         },
         {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#measure/value-of-trade",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Value of Trade"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/industry-sector",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "trade-partner.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Trade Partner"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/trade-partner"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/trade-partner",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/transaction",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/transaction",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction",
             "@type": [
-                "http://purl.org/linked-data/cube#DimensionProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
             ],
             "http://purl.org/linked-data/cube#codeList": [
                 {
@@ -697,6 +439,274 @@
             "http://www.w3.org/2000/01/rdf-schema#range": [
                 {
                     "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/transaction"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "flow.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Flow"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/flow"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/flow",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "industry-sector.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Industry Sector"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/industry-sector"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/year"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/observation-status"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/trade-partner"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/industry-sector"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/value-of-trade"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/transaction"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/flow"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/measure-type"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/unit"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/year"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#attribute/observation-status"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/transaction"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#measure/value-of-trade"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/trade-partner"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dataset",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#Attachable"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/northern-ireland-statistics-and-research-agency"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "Latest year data remains provisional until next reporting period. Figures may not sum due to rounding."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-08-05T15:25:10.447639"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-08-05T15:25:10.447639"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Broad Economy Sales and Export Statistics: Trade in Goods and Services"
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/flow",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/flow"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#class/trade-partner",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#component/industry-sector",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#dimension/industry-sector"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
                 }
             ]
         },
@@ -801,8 +811,8 @@
             "@id": "broad-economy-sales-and-export-statistics-trade-in-goods-and-services.csv#unit/ps-million",
             "@type": [
                 "http://qudt.org/schema/qudt/Unit",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
