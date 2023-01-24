@@ -21,7 +21,7 @@
             {
                 "name": "period",
                 "titles": "period",
-                "datatype": "dayTimeDuration",
+                "datatype": "string",
                 "rdfs:label": "Period",
                 "rdfs:comment": "The period of an observation.",
                 "propertyUrl": "http://data.gov.uk/dataset/life-expectancy-by-region-sex-and-time/dimension/period",
