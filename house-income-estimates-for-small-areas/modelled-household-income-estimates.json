@@ -1,0 +1,51 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Household Income Estimates for Small Areas",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Mean and median average household income Estimates for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13",
+    "description": "Mean and median average household income Estimates for, Lower SOAs, Middle SOAs, Wards and Boroughs, London, 2001/02 to 2012/13. This income data is unequivalised - that is it takes no account of average household size or composition within each area.",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "income",
+        "estimates",
+        "household",
+        "greater-London",
+        "lower-super-output-area"
+    ],
+    "publisher": "https://www.london.gov.uk/",
+    "themes": "https://www.ons.gov.uk/",
+    "columns": {
+        "Period": {
+            "type": "dimension",
+            "from_template": "government-year"
+        },
+        "AREACD": {
+            "from_template": "statistical-geography"
+        },
+        "AREANM": false,
+        "Indicator": {
+            "type": "measures",
+            "values": [
+                {
+                    "label": "Mean Modelled Household Income Estimates",
+                    "from_existing": "https://purl.org/csv-cubed/resources/measures#monetary-count"
+                    
+                },
+                {
+                    "label": "Median Modelled Household Income Estimates",
+                    "from_existing": "https://purl.org/csv-cubed/resources/measures#monetary-count"
+                }
+            ]
+        },
+        "Value": {
+            "type": "observations",
+            "data_type": "integer",
+            "unit": {
+                "label": "Pounds Sterling",
+                "from_existing": "http://qudt.org/vocab/unit/PoundSterling"
+            }
+        },
+        "Measure": false,
+        "Unit": false
+    }
+}
