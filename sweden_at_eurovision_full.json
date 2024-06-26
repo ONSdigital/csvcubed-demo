@@ -16,6 +16,15 @@
         "Year": {
             "from_template": "year"
         },
+        "Entrant": {
+            "type": "attribute"
+        },
+        "Song": {
+            "type": "attribute"
+        },
+        "Language": {
+            "type": "attribute"
+        },
         "Marker": {
             "from_template": "observation-status"
         },
