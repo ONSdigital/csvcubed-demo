@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+    <h3>CSV-Ws generated are as below. The latest commit id is 13d3082c2fc688afcb94405fb6f8ad3e6ddac642.</h3>
+    <div id="files-container"></div>
+    <script type="text/javascript">
+        var html_str = "<ul>";
+        var files = "|||out/sweden_at_eurovision_full/year.table.json|||out/sweden_at_eurovision_full/song.csv-metadata.json_inspect_output.txt|||out/sweden_at_eurovision_full/year.csv-metadata.json|||out/sweden_at_eurovision_full/language.csv-metadata.json_inspect_output.txt|||out/sweden_at_eurovision_full/entrant.csv-metadata.json|||out/sweden_at_eurovision_full/language.table.json|||out/sweden_at_eurovision_full/entrant.table.json|||out/sweden_at_eurovision_full/sweden-at-eurovision-complete-dataset.csv-metadata.json_inspect_output.txt|||out/sweden_at_eurovision_full/year.csv|||out/sweden_at_eurovision_full/year.csv-metadata.json_inspect_output.txt|||out/sweden_at_eurovision_full/entrant.csv|||out/sweden_at_eurovision_full/song.table.json|||out/sweden_at_eurovision_full/language.csv-metadata.json|||out/sweden_at_eurovision_full/entrant.csv-metadata.json_inspect_output.txt|||out/sweden_at_eurovision_full/sweden-at-eurovision-complete-dataset.csv-metadata.json|||out/sweden_at_eurovision_full/language.csv|||out/sweden_at_eurovision_full/song.csv-metadata.json|||out/sweden_at_eurovision_full/sweden-at-eurovision-complete-dataset.csv|||out/sweden_at_eurovision_full/song.csv".split('|||');
+        files.shift()
+        files.sort()
+        files.forEach(function(file) {
+        file = file.replace("./","")
+        link = "https://GSS-Cogs.github.io/csvcubed-demo/"+file
+        html_str += "<li>"+"<a href='"+ link + "'>"+file+"</a></li>";
+        });
+        html_str += "</ul>";
+        document.getElementById("files-container").innerHTML = html_str;
+    </script>
+    </body>
+</html>
