@@ -16,23 +16,23 @@
                     {
                         "titles": "Entrant",
                         "name": "entrant",
-                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#dimension/entrant",
-                        "valueUrl": "entrant.csv#{+entrant}",
-                        "required": true
+                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant",
+                        "valueUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/{+entrant}",
+                        "required": false
                     },
                     {
                         "titles": "Song",
                         "name": "song",
-                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#dimension/song",
-                        "valueUrl": "song.csv#{+song}",
-                        "required": true
+                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/song",
+                        "valueUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/song/{+song}",
+                        "required": false
                     },
                     {
                         "titles": "Language",
                         "name": "language",
-                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#dimension/language",
-                        "valueUrl": "language.csv#{+language}",
-                        "required": true
+                        "propertyUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/language",
+                        "valueUrl": "sweden-at-eurovision-complete-dataset.csv#attribute/language/{+language}",
+                        "required": false
                     },
                     {
                         "titles": "Observation",
@@ -82,196 +82,27 @@
                             "resource": "year.csv",
                             "columnReference": "uri_identifier"
                         }
-                    },
-                    {
-                        "columnReference": "entrant",
-                        "reference": {
-                            "resource": "entrant.csv",
-                            "columnReference": "uri_identifier"
-                        }
-                    },
-                    {
-                        "columnReference": "song",
-                        "reference": {
-                            "resource": "song.csv",
-                            "columnReference": "uri_identifier"
-                        }
-                    },
-                    {
-                        "columnReference": "language",
-                        "reference": {
-                            "resource": "language.csv",
-                            "columnReference": "uri_identifier"
-                        }
                     }
                 ],
                 "primaryKey": [
                     "year",
-                    "entrant",
-                    "song",
-                    "language",
                     "measure"
                 ],
-                "aboutUrl": "sweden-at-eurovision-complete-dataset.csv#obs/{year},{entrant},{song},{language}@{measure}"
+                "aboutUrl": "sweden-at-eurovision-complete-dataset.csv#obs/{year}@{measure}"
             }
         },
         {
             "url": "year.csv",
             "tableSchema": "year.table.json",
             "suppressOutput": true
-        },
-        {
-            "url": "entrant.csv",
-            "tableSchema": "entrant.table.json",
-            "suppressOutput": true
-        },
-        {
-            "url": "song.csv",
-            "tableSchema": "song.table.json",
-            "suppressOutput": true
-        },
-        {
-            "url": "language.csv",
-            "tableSchema": "language.table.json",
-            "suppressOutput": true
         }
     ],
     "rdfs:seeAlso": [
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Final Points"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#int"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#class/language",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Class",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/song",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/song"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/song"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 3
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/language",
-            "@type": [
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "language.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Language"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#class/language"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#class/entrant",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Class",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Final Rank"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#int"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#class/song",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Class",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#AttributeProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Observation Status"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
-                }
-            ]
-        },
-        {
             "@id": "sweden-at-eurovision-complete-dataset.csv#component/unit",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://purl.org/linked-data/cube#ComponentSet"
             ],
             "http://purl.org/linked-data/cube#attribute": [
@@ -296,12 +127,319 @@
             ]
         },
         {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#structure",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/year"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/song"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/observation-status"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/measure-type"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/entrant"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/unit"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-rank"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/language"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/people-on-stage"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-points"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
+                },
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Final Rank"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#int"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-rank",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Final Points"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#int"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/song",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-points",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Observation Status"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/entrant",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language",
+            "@type": [
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Language"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/measure-type",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/people-on-stage",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/prov#Activity"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.12"
+                }
+            ]
+        },
+        {
             "@id": "sweden-at-eurovision-complete-dataset.csv#dataset",
             "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#Attachable",
                 "http://purl.org/linked-data/cube#DataSet",
                 "http://www.w3.org/ns/dcat#Dataset",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/ns/dcat#Resource"
             ],
             "http://purl.org/dc/terms/description": [
@@ -363,10 +501,6 @@
             "http://www.w3.org/ns/dcat#keyword": [
                 {
                     "@language": "en",
-                    "@value": "Song Contest"
-                },
-                {
-                    "@language": "en",
                     "@value": "European Broadcasting Union"
                 },
                 {
@@ -376,6 +510,10 @@
                 {
                     "@language": "en",
                     "@value": "Eurovision"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Song Contest"
                 }
             ],
             "http://www.w3.org/ns/prov#wasGeneratedBy": [
@@ -385,342 +523,28 @@
             ]
         },
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/year",
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#AttributeProperty",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 1
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#class/year",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Class",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/song",
-            "@type": [
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "song.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Song"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#class/song"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/language",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/language"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/language"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 4
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-points",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 6
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#structure",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#DataStructureDefinition"
-            ],
-            "http://purl.org/linked-data/cube#component": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/observation-status"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-rank"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/language"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-points"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/year"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/song"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/unit"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/entrant"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/measure-type"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#component/people-on-stage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/entrant"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/language"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-points"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                },
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/song"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "People on Stage"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#int"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/measure-type",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 5
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/entrant",
-            "@type": [
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "entrant.csv#code-list"
-                }
+                "http://purl.org/linked-data/cube#ComponentProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
                     "@value": "Entrant"
                 }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#class/entrant"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/observation-status",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#attribute": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentRequired": [
-                {
-                    "@value": false
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 10
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/people-on-stage",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 8
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#csvcubed-build-activity",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/ns/prov#Activity"
-            ],
-            "http://www.w3.org/ns/prov#used": [
-                {
-                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.12"
-                }
-            ]
-        },
-        {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/final-rank",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#measure/final-rank"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 7
-                }
             ]
         },
         {
             "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year",
             "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource"
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty"
             ],
             "http://purl.org/linked-data/cube#codeList": [
                 {
@@ -745,25 +569,123 @@
             ]
         },
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#component/entrant",
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/year",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
                 "http://purl.org/linked-data/cube#ComponentSet"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/entrant"
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
                 }
             ],
             "http://purl.org/linked-data/cube#dimension": [
                 {
-                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/entrant"
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#dimension/year"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 2
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/language",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song",
+            "@type": [
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Song"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#component/observation-status",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 10
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#class/year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#measure/people-on-stage",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "People on Stage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#int"
                 }
             ]
         },
@@ -785,53 +707,1502 @@
             ]
         },
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dependency/entrant",
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/abba",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://rdfs.org/ns/void#Dataset"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
-            "http://rdfs.org/ns/void#dataDump": [
+            "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
-                    "@id": "./entrant.csv-metadata.json"
-                }
-            ],
-            "http://rdfs.org/ns/void#uriSpace": [
-                {
-                    "@value": "entrant.csv#"
+                    "@language": "en",
+                    "@value": "ABBA"
                 }
             ]
         },
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dependency/song",
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/afro-dite",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://rdfs.org/ns/void#Dataset"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
-            "http://rdfs.org/ns/void#dataDump": [
+            "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
-                    "@id": "./song.csv-metadata.json"
-                }
-            ],
-            "http://rdfs.org/ns/void#uriSpace": [
-                {
-                    "@value": "song.csv#"
+                    "@language": "en",
+                    "@value": "Afro-dite"
                 }
             ]
         },
         {
-            "@id": "sweden-at-eurovision-complete-dataset.csv#dependency/language",
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/alice-babs",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://rdfs.org/ns/void#Dataset"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
-            "http://rdfs.org/ns/void#dataDump": [
+            "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
-                    "@id": "./language.csv-metadata.json"
+                    "@language": "en",
+                    "@value": "Alice Babs"
                 }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/anna-bergendahl",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
-            "http://rdfs.org/ns/void#uriSpace": [
+            "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
-                    "@value": "language.csv#"
+                    "@language": "en",
+                    "@value": "Anna Bergendahl"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/arvingarna",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Arvingarna"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/benjamin-ingrosso",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Benjamin Ingrosso"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/bjorn-skifs",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Bj\u00f6rn Skifs"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/blond",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Blond"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/brita-borg",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Brita Borg"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/carola",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Carola"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/charlotte-nilsson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Charlotte Nilsson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/charlotte-perrelli",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Charlotte Perrelli"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/chips",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Chips"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/christer-bjorkman",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Christer Bj\u00f6rkman"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/claes-goran-hederstrom",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Claes-G\u00f6ran Hederstr\u00f6m"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/cornelia-jakobs",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cornelia Jakobs"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/edin-adahl",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Edin-\u00c5dahl"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/eric-saade",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Eric Saade"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/fame",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Fame"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/family-four",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Family Four"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/forbes",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Forbes"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/frans",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Frans"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/friends",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Friends"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/herreys",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Herreys"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/inger-berggren",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Inger Berggren"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/ingvar-wixell",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Ingvar Wixell"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/jan-johansen",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Jan Johansen"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/jill-johnson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Jill Johnson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/john-lundvik",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "John Lundvik"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/kikki-danielsson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Kikki Danielsson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/lars-berghagen-and-the-dolls",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lars Berghagen and the Dolls"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/lena-philipsson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lena Philipsson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/lill-lindfors-and-svante-thuresson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lill Lindfors and Svante Thuresson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/lill-babs",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lill-Babs"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/loreen",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Loreen"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/lotta-engberg",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lotta Engberg"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/malena-ernman",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Malena Ernman"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/marcus-martinus",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Marcus & Martinus"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/marie-bergman-and-roger-pontare",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Marie Bergman and Roger Pontare"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/martin-stenmarck",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Martin Stenmarck"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/monica-tornell-and-lasse-holm",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Monica T\u00f6rnell and Lasse Holm"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/monica-zetterlund",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Monica Zetterlund"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/mans-zelmerlow",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "M\u00e5ns Zelmerl\u00f6w"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/one-more-time",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "One More Time"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/robin-bengtsson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Robin Bengtsson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/robin-stjernberg",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Robin Stjernberg"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/roger-pontare",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Roger Pontare"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/sanna-nielsen",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sanna Nielsen"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/siw-malmkvist",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Siw Malmkvist"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/ted-gardestad",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Ted G\u00e4rdestad"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/the-ark",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "The Ark"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/the-mamas",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "The Mamas"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/the-nova-and-the-dolls",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "The Nova and the Dolls"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/tomas-ledin",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tomas Ledin"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/tommy-korberg",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tommy K\u00f6rberg"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/tommy-nilsson",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tommy Nilsson"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/tusse",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tusse"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/entrant/osten-warnerbring",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "\u00d6sten Warnerbring"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/absent-friend",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Absent Friend"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/alla-andra-far-varann",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Alla andra f\u00e5r varann"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/april-april",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "April,april"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/augustin",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Augustin"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/bara-hon-alskar-mig",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Bara hon \u00e4lskar mig"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/beatles",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Beatles"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/boogaloo",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Boogaloo"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/bra-vibrationer",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Bra vibrationer"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/dag-efter-dag",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Dag efter dag"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/dance-you-off",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Dance You Off"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/den-vilda",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Den vilda"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/det-blir-alltid-varre-framat-natten",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Det blir alltid v\u00e4rre fram\u00e5t natten"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/det-borjar-verka-karlek-banne-mig",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Det b\u00f6rjar verka k\u00e4rlek,banne mig"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/diggi-loo-diggi-ley",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Diggi-Loo Diggi-Ley"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/e-de-det-har-du-kallar-karlek",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "E' de' det h\u00e4r du kallar k\u00e4rlek?"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/eloise",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Eloise"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/en-dag",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "En dag"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/en-gang-i-stockholm",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "En g\u00e5ng i Stockholm"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/euphoria",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Euphoria"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/framling",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Fr\u00e4mling"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/fangad-av-en-stormvind",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "F\u00e5ngad av en stormvind"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/fangad-i-en-drom",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "F\u00e5ngad i en dr\u00f6m"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/give-me-your-love",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Give Me Your Love"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/hero",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Hero"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/heroes",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Heroes"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/hold-me-closer",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Hold Me Closer"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/harliga-sommardag",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "H\u00e4rliga sommardag"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/i-can-t-go-on",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "I Can't Go On"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/i-morgon-ar-en-annan-dag",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "I morgon \u00e4r en annan dag"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/if-i-were-sorry",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "If I Were Sorry"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/invincible",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Invincible"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/it-hurts",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "It Hurts"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/jennie-jennie",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Jennie,Jennie"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/judy-min-van",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Judy,min v\u00e4n"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/just-nu",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Just nu!"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/karleken-ar",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "K\u00e4rleken \u00e4r"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/la-voix",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "La voix"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/las-vegas",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Las Vegas"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/lilla-stjarna",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lilla stj\u00e4rna"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/listen-to-your-heartbeat",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Listen to Your Heartbeat"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/move",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Move"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/never-let-it-go",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Never Let It Go"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/nygammal-vals",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Nygammal vals"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/popular",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Popular"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/satellit",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Satellit"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/se-pa-mej",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Se p\u00e5 mej"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/sol-och-var",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sol och v\u00e5r"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/som-en-drom",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Som en dr\u00f6m"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/som-en-vind",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Som en vind"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/stad-i-ljus",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Stad i ljus"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/stjarnorna",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Stj\u00e4rnorna"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/take-me-to-your-heaven",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Take Me to Your Heaven"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/tattoo",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tattoo"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/the-worrying-kind",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "The Worrying Kind"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/this-is-my-life",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "This Is My Life"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/too-late-for-love",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Too Late for Love"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/undo",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Undo"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/unforgettable",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Unforgettable"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/vita-vidder",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Vita vidder"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/voices",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Voices"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/waterloo",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Waterloo"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/when-spirits-are-calling-my-name",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "When Spirits Are Calling My Name"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/you",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "You"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/song/you-re-summer",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "You're Summer"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language/english",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "English"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language/multiple",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Multiple"
+                }
+            ]
+        },
+        {
+            "@id": "sweden-at-eurovision-complete-dataset.csv#attribute/language/swedish",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Swedish"
                 }
             ]
         },
