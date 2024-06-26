@@ -32,7 +32,7 @@
                 }
             ]
         },
-        "Value": {
+        "Observation": {
             "type": "observations",
             "data_type": "int"
         }
