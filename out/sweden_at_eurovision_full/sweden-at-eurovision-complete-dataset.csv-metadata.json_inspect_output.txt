@@ -13,10 +13,10 @@
           - Landing Pages: None
           - Themes: None
           - Keywords: 
-		-- Sweden
-		-- Song Contest
-		-- European Broadcasting Union
 		-- Eurovision
+		-- European Broadcasting Union
+		-- Song Contest
+		-- Sweden
           - Contact Point: None
           - Identifier: Sweden at Eurovision Complete Dataset
           - Comment: List of Swedish entries to the Eurovision Song Contest since 1958.
@@ -28,9 +28,9 @@
     - Columns: 
           Title         Type  Required                                                           Property URL Observations Column Titles
            Year    Dimension      True               sweden-at-eurovision-complete-dataset.csv#dimension/year                           
-        Entrant    Dimension      True            sweden-at-eurovision-complete-dataset.csv#dimension/entrant                           
-           Song    Dimension      True               sweden-at-eurovision-complete-dataset.csv#dimension/song                           
-       Language    Dimension      True           sweden-at-eurovision-complete-dataset.csv#dimension/language                           
+        Entrant    Attribute     False            sweden-at-eurovision-complete-dataset.csv#attribute/entrant                           
+           Song    Attribute     False               sweden-at-eurovision-complete-dataset.csv#attribute/song                           
+       Language    Attribute     False           sweden-at-eurovision-complete-dataset.csv#attribute/language                           
     Observation Observations     False           sweden-at-eurovision-complete-dataset.csv#measure/{+measure}                           
         Measure     Measures      True                           http://purl.org/linked-data/cube#measureType                           
            Unit        Units      True            http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                           
@@ -38,13 +38,10 @@
     - Columns where suppress output is true: None
 
 - The data cube has the following code list information:
-        - Number of Code Lists: 4
+        - Number of Code Lists: 1
         - Code Lists:
-             Code List Code List Label Columns Used In
- entrant.csv#code-list         Entrant         Entrant
-language.csv#code-list        Language        Language
-    song.csv#code-list            Song            Song
-    year.csv#code-list            Year            Year
+         Code List Code List Label Columns Used In
+year.csv#code-list            Year            Year
 
 - The data cube has the following dataset information:
         - Number of Observations: 192
